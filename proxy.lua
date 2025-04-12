@@ -1,14 +1,10 @@
 LogToConsole("`0[`2Law`3Proxy`0]`9 PROXY STARTED")
-package.path = package.path .. ";storage/emulated/0/android/data/launcher.powerkuy.growlauncher/files/ScriptLua/LawModules/?.lua"
+package.path = package.path .. ";storage/emulated/0/android/data/launcher.powerkuy.growlauncher/files/ScriptLua?.lua"
 
 
 -- VARIABLE SECTION=================
 
 Pembatas = "add_smalltext|======================================================================================|left|"
-
-infoTitle = "\nadd_label_with_icon|small|`2Info:|left|660|"
-
-mainFTitle = "\nadd_label_with_icon|small|`2Main Features:|left|12264|"
 
 -- FUNCTION SECTION================
 function on_sendpacket(type, packet)
