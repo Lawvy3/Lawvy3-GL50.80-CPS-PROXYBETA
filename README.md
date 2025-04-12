@@ -47,7 +47,7 @@ Growtopia proxy khusus creativePS
 
 /scan (Free Extract-O-Snap On Punch)
 
-/csn (Roulette/Dice Setting Page
+/csn & /roulette (Roulette/Dice Setting Page)
 
 
 ### AUTO HOSTER
