@@ -105,11 +105,11 @@ Growtopia proxy khusus creativePS
 
 /daw (Drops All Your WLS/DLS/BGLS)
 
-/cdrop & /cd [number] (Drops Custom Amount Of WLS)
+/cd [number] (Drops Custom Amount Of WLS)
 
-/ddrop & /dd [number] (Drops Custom Amount Of DLS)
+/dd [number] (Drops Custom Amount Of DLS)
 
-/gamedrop & /gdrop & /gd (Drops Calculated Taxed Outcome)
+/bd [number] (Drops Custom Amount Of DLS)
 
 /game [number] (Automaticaly Calculates Taxed Outcome [/tax to select custom tax])
 
