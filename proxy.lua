@@ -285,7 +285,6 @@ config = reloadConfig()
 
 -- SPIN
 
-if config.fastspin == 1 then
 if var.v1 == "OnTalkBubble" and var.v3:find("spun the wheel and got") then
     if var.v3:find("spun the wheel and got") and (var.v3:find("`2(%d+)``!") or var.v3:find("`4(%d+)``!") or var.v3:find("`b(%d+)``!")) then
 varfs = {}
@@ -304,7 +303,6 @@ return true
 end
 end
 
-end
 
 
 return false
