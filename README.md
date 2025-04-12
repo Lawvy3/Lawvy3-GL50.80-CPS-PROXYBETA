@@ -65,7 +65,9 @@ Growtopia proxy khusus creativePS
 /reset (Resets All Autohost Positions)
 
 ### INFORMATION
-/balance (Shows Your Current World Lock Balance)
+/balance & /bal (Shows Your Current World Lock Balance)
+
+/id [item name] (Show Item ID `4[Only Pog Custom Item Work])
 
 /gscan (Free Growscan)
 
