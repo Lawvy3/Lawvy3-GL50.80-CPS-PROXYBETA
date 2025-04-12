@@ -22,6 +22,7 @@ function log(str)
 LogToConsole("`0[`2Law`3Proxy`0] `9"..str)
 end
 
+-- Return Item Amount
 function checkitm(id)
 for _, inv in pairs(GetInventory()) do 
 if inv.id == id then 
@@ -31,6 +32,7 @@ end
 return 0 
 end
 
+-- Wear/Double click item to player
 function wear(id)
 pkt = {}
 pkt.type = 10
@@ -39,7 +41,7 @@ SendPacketRaw(false, pkt)
 end
 
 
-
+-- Edit Config
 function editConfigVariable(variableName, newValue)          
 local file = io.open("storage/emulated/0/android/data/launcher.powerkuy.growlauncher/files/ScriptLua/LawModules/config.lua", "r")     if not file then         
 log("Error: Could not open config.lua for reading!")         
@@ -59,6 +61,7 @@ file:close()
 log("Config file has been updated: " .. variableName .. " = " .. newValue) 
 end
 
+-- Return Balance
 function balance(jenis)
 bgl = growtopia.checkInventoryCount(7188)
 dl = growtopia.checkInventoryCount(1796)
@@ -70,11 +73,12 @@ return totalWL
 end
 end
 
+-- Show WL Balance When Join World
 if packet:find("action|join_request") or command("/warp") or command("/wp") or command("/b") or command("/back") then
 LogToConsole("`9World Lock Balance: `5"..balance("wlTotal"))
 end
 
-
+-- Reloading Config
 function reloadConfig()
 package.loaded["config"] = nil
 
