@@ -92,8 +92,9 @@ local config = reloadConfig()
 
 -- COMMAND SECTION =================
 
-
--- /HELP
+--INFO
+    
+-- /PROXY
 if command("/proxy") then
 help_dialog = [[
 
@@ -118,7 +119,7 @@ add_label_with_icon|small|`2Info:|left|660|
 add_smalltext|`2/proxy `9(Show All Proxy Commands/This Page)|left|
 add_smalltext|`2/news `9(Shows Proxy News & Commands)|
 add_smalltext|`2/gazette `9(SOON)|
-add_smalltext|`2/discord `9(Join LawProxy Discord For More Info)|left|
+add_smalltext|`2/discord `9(Join LawProxy Discord Server)|left|
 
 add_spacer|small|
 
@@ -130,36 +131,79 @@ add_spacer|small|
 
 add_label_with_icon|small|`2Main Features:|left|12264|
 
-add_smalltext|`2/csn & /roulette `9(Roulette/Dice Settings Page)|
-add_smalltext|`2/wrench `9(Wrench Mode Pull/Kick/Ban/Trade)|
-add_smalltext|`2/scan `9(Free Extract O Snap With Wrench)|
+add_smalltext|`2/options `9(Opens A Big List Of Selectable Features)|
+add_smalltext|`2/spam `9(Opens Spam Settings)|
+add_smalltext|`2/tax `9(Set Your Custom Tax Amount)|
+add_smalltext|`2/world `9(Shows World Options Like Pullall/Kickall/Banall)|
+add_smalltext|`2/wrench `9(Select Wrench Mode Pull/Kick/Ban)|
+add_smalltext|`2/worlds & /myworld `9(Opens A List Of Worlds Owned By You)|
+add_smalltext|`2/auto `9(Auto Ban/Pull When Player Joins)|
+add_smalltext|`2/scan `9(Free Extract-O-Snap On Punch)|
+add_smalltext|`2/csn & /roulette `9(Roulette/Dice Setting Page)|
 
+        
 add_spacer|small|
-
+        
 add_label_with_icon|small|`2Auto Hoster:|left|758|
 
-add_spacer|small|
-
+add_smalltext|`2/pos1 `9(Set Pos1 For Autohost To Teleport)|
+add_smalltext|`2/pos2 `9(Set Pos2 For Autohost To Teleport)|
+add_smalltext|`2/tp `9(Starts Autohoster [Don't Move])|
+add_smalltext|`2/win1 `9(Drops Prize To Pos1)|
+add_smalltext|`2/win2 `9(Drops Prize To Pos2)|
+add_smalltext|`2/reset `9(Resets All Autohost Positions)  |
+        
+add_spacer|small|     
+        
 add_label_with_icon|small|`2Information:|left|11186|
-
+        
+add_smalltext|`2/balance & /bal `9(Shows Your Current World Lock Balance)|
+add_smalltext|`2/id [item name] `9(Show Item ID `4[Only Pog Custom Item Work])|
+add_smalltext|`2/gscan `9(Free Growscan)|
+add_smalltext|`2/chest `9(Shows Hidden Items In Chests)|
+        
 add_spacer|small|
-
+        
 add_label_with_icon|small|`2Shortcuts:|left|2322|
-
+        
+add_smalltext|`2/pullall `9(Pulls Everyone In The World)|
+add_smalltext|`2/kickall `9(Kicks Everyone In the World)|
+add_smalltext|`2/banall `9(Bans Everyone In The World)|
+add_smalltext|`2/antigravity `9(Toggle Unlimited Jumping)|
+add_smalltext|`2/back `9(Warps You To A Previously Visited World)|
+add_smalltext|`2/relog `9(Fast Exit & Join Back To The World)|
+add_smalltext|`2/res `9(Shortcut To Respawn)|
+add_smalltext|`2/autopull `9(Shortcut To Enable Autopull Specific People)|
+add_smalltext|`2/autoban `9(Shortcut To Enable Autoban Specific People)|
+add_smalltext|`2/autopullall `9(Shortcut To Enable Autopull Everyone)|
+add_smalltext|`2/autobanall `9(Shortcut To Enable Autoban Everyone)|
+    
 add_spacer|small|
-
+        
 add_label_with_icon|small|`2Other:|left|3432|
 
-add_smalltext|`2/cd [amount] `9(Drop World Locks With lSpesific Amount)|
-add_smalltext|`2/dd [amount] `9(Drop Diamond Locks With Spesific Amount)|
-add_smalltext|`2/bd [amount] `9(Drop Blue Gem Locks With Spesific Amount)|
+add_smalltext|`2/warp [world] `9(Warps To A World)|
+add_smalltext|`2/daw `9(Drops All Your WLS/DLS/BGLS)|
+add_smalltext|`2/cd [number] `9(Drops Custom Amount Of WLS)|
+add_smalltext|`2/dd [number] `9(Drops Custom Amount Of DLS)|
+add_smalltext|`2/bd [number] `9(Drops Custom Amount Of DLS)|
+add_smalltext|`2/game [number] `9(Automaticaly Calculates Taxed Outcome [/tax to select custom tax])|
+add_smalltext|`2/game1 [number] `9(Automaticaly Calculates Taxed Outcome For CSN 10%)|
+add_smalltext|`2/game2 [number] `9(Automaticaly Calculates Taxed Outcome For CSN 2.5%)|
+
 
 add_spacer|small|
 
 add_label_with_icon|small|`2Visual:|left|1784|
 
-add_smalltext|`2/mod `9(Trough The Wall And Invisible, But Its Just Visual)|
-
+add_smalltext|`2/titles `9(You Can Select Visual g4g, maxlevel...)|
+add_smalltext|`2/legend `9(Sets Your Name To Legendary Name)|
+add_smalltext|`2/name [name] `9(Set Visual Name To Your Name)|
+add_smalltext|`2/mod `9(Toggle Visual Moderator Mode) [Bannable]|
+add_smalltext|`2/fakeban `9(Visually Get Perma-Ban)|
+add_smalltext|`2/warn `9(Warn Your Self With Any Text!)|
+add_smalltext|`2/setwarn [text] `9(Set Custom Warning Text)|
+        
 add_spacer|small|
 
 add_quick_exit
@@ -170,6 +214,15 @@ return true
 end
 
 
+
+--/news
+
+
+--/gazette
+
+    
+    
+-- /discord
 if packet:find("buttonClicked|discord") or command("/discord") then
 discordLog = [[
 add_label_with_icon|big|`cLvCode `6Community|right|11186|
@@ -190,6 +243,17 @@ growtopia.sendDialog(discordLog)
 end
 
 
+    
+
+
+--MAIN FEATURE
+
+
+
+
+
+
+    
 -- Drop
 
  local dlockID = 1796
