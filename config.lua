@@ -2,7 +2,7 @@ return {
 
   spam = {
     text = "",
-    delay 5,
+    delay = 5,
     enable = 0
   },
 
