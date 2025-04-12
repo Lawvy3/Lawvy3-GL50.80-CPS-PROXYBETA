@@ -87,7 +87,7 @@ Growtopia proxy khusus creativePS
 
 /relog (Fast Exit & Join Back To The World)
 
-/acc (Shortcut To Autoacc)
+/res (Shortcut To Respawn)
 
 /wm (Shortcut To Enable Wrench Mode)
 
