@@ -117,8 +117,7 @@ add_spacer|small|
 add_label_with_icon|small|`2Info:|left|660|
 
 add_smalltext|`2/proxy `9(Show All Proxy Commands/This Page)|left|
-add_smalltext|`2/news `9(Shows Proxy News & Commands)|
-add_smalltext|`2/gazette `9(SOON)|
+add_smalltext|`2/update `9(Shows Proxy News & Commands)|
 add_smalltext|`2/discord `9(Join LawProxy Discord Server)|left|
 
 add_spacer|small|
@@ -215,10 +214,9 @@ end
 
 
 
---/news
+--/update
 
 
---/gazette
 
     
     
